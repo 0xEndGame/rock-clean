@@ -9,7 +9,7 @@ import useRefresh from './useRefresh'
 const useAllEarnings = () => {
   const [balances, setBalance] = useState([])
   const { account }: { account: string } = useWallet()
-  const { slowRefresh } = useRefresh()
+  const { fastRefresh } = useRefresh()
 
   useEffect(() => {
     const fetchAllBalances = async () => {
@@ -27,7 +27,7 @@ const useAllEarnings = () => {
     if (account) {
       fetchAllBalances()
     }
-  }, [account, slowRefresh])
+  }, [account, fastRefresh])
 
   return balances
 }
