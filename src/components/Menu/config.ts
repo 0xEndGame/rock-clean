@@ -51,7 +51,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0x5f26be59d28e0b3a9c58e242a58acc05e000f4ad',
+        href: 'https://pancakeswap.info/token/0x1ea081f46C4E0D65193915225377898E297b7CC9',
       },
     ],
   },
